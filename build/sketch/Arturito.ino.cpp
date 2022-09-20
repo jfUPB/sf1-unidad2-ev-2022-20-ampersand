@@ -4,9 +4,9 @@
 String btnState(uint8_t btnState);
 #line 8 "/home/pop-os/sf1-unidad2-ev-2022-20-ampersand/Arturito.ino"
 void task();
-#line 117 "/home/pop-os/sf1-unidad2-ev-2022-20-ampersand/Arturito.ino"
+#line 125 "/home/pop-os/sf1-unidad2-ev-2022-20-ampersand/Arturito.ino"
 void setup();
-#line 122 "/home/pop-os/sf1-unidad2-ev-2022-20-ampersand/Arturito.ino"
+#line 130 "/home/pop-os/sf1-unidad2-ev-2022-20-ampersand/Arturito.ino"
 void loop();
 #line 1 "/home/pop-os/sf1-unidad2-ev-2022-20-ampersand/Arturito.ino"
 String btnState(uint8_t btnState){
@@ -30,7 +30,7 @@ void task()
   constexpr uint8_t led4 = 25;
   constexpr uint8_t button1Pin = 12;
   constexpr uint8_t button2Pin = 13;
-  constexpr uint8_t button3Pin = 32;
+  constexpr uint8_t button3Pin = 18;
 
   switch (taskState)
   {
@@ -80,37 +80,45 @@ void task()
       {
         digitalWrite(led3, LOW);
       }
+      else if (command == "led4ON")
+      {
+        digitalWrite(led4, HIGH);
+      }
+      else if (command == "led4OFF")
+      {
+        digitalWrite(led4, LOW);
+      }
       else if (command == "readBUTTONS")
       {
-        if(digitalRead(button1Pin) == HIGH && digitalRead(button1Pin) == HIGH && digitalRead(button1Pin) == HIGH)
+        if(digitalRead(button1Pin) == HIGH && digitalRead(button2Pin) == HIGH && digitalRead(button3Pin) == HIGH)
         {
             Serial.print("0,0,0\n");
         }
-        else if(digitalRead(button1Pin) == LOW && digitalRead(button1Pin) == HIGH && digitalRead(button1Pin) == HIGH)
+        else if(digitalRead(button1Pin) == LOW && digitalRead(button2Pin) == HIGH && digitalRead(button3Pin) == HIGH)
         {
             Serial.print("1,0,0\n");
         }
-        else if(digitalRead(button1Pin) == HIGH && digitalRead(button1Pin) == LOW && digitalRead(button1Pin) == HIGH)
+        else if(digitalRead(button1Pin) == HIGH && digitalRead(button2Pin) == LOW && digitalRead(button3Pin) == HIGH)
         {
             Serial.print("0,1,0\n");
         }
-        else if(digitalRead(button1Pin) == HIGH && digitalRead(button1Pin) == HIGH && digitalRead(button1Pin) == LOW)
+        else if(digitalRead(button1Pin) == HIGH && digitalRead(button2Pin) == HIGH && digitalRead(button3Pin) == LOW)
         {
             Serial.print("0,0,1\n");
         }
-        else if(digitalRead(button1Pin) == HIGH && digitalRead(button1Pin) == LOW && digitalRead(button1Pin) == LOW)
+        else if(digitalRead(button1Pin) == HIGH && digitalRead(button2Pin) == LOW && digitalRead(button3Pin) == LOW)
         {
             Serial.print("0,1,1\n");
         }
-        else if(digitalRead(button1Pin) == LOW && digitalRead(button1Pin) == HIGH && digitalRead(button1Pin) == LOW)
+        else if(digitalRead(button1Pin) == LOW && digitalRead(button2Pin) == HIGH && digitalRead(button3Pin) == LOW)
         {
             Serial.print("1,0,1\n");
         }
-        else if(digitalRead(button1Pin) == LOW && digitalRead(button1Pin) == LOW && digitalRead(button1Pin) == HIGH)
+        else if(digitalRead(button1Pin) == LOW && digitalRead(button2Pin) == LOW && digitalRead(button3Pin) == HIGH)
         {
             Serial.print("1,1,0\n");
         }
-        else if(digitalRead(button1Pin) == LOW && digitalRead(button1Pin) == LOW && digitalRead(button1Pin) == LOW)
+        else if(digitalRead(button1Pin) == LOW && digitalRead(button2Pin) == LOW && digitalRead(button3Pin) == LOW)
         {
             Serial.print("1,1,1\n");
         }

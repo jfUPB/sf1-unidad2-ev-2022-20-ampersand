@@ -20,7 +20,7 @@ void task()
   constexpr uint8_t led4 = 25;
   constexpr uint8_t button1Pin = 12;
   constexpr uint8_t button2Pin = 13;
-  constexpr uint8_t button3Pin = 32;
+  constexpr uint8_t button3Pin = 18;
 
   switch (taskState)
   {
@@ -70,37 +70,45 @@ void task()
       {
         digitalWrite(led3, 0x0);
       }
+      else if (command == "led4ON")
+      {
+        digitalWrite(led4, 0x1);
+      }
+      else if (command == "led4OFF")
+      {
+        digitalWrite(led4, 0x0);
+      }
       else if (command == "readBUTTONS")
       {
-        if(digitalRead(button1Pin) == 0x1 && digitalRead(button1Pin) == 0x1 && digitalRead(button1Pin) == 0x1)
+        if(digitalRead(button1Pin) == 0x1 && digitalRead(button2Pin) == 0x1 && digitalRead(button3Pin) == 0x1)
         {
             Serial.print("0,0,0\n");
         }
-        else if(digitalRead(button1Pin) == 0x0 && digitalRead(button1Pin) == 0x1 && digitalRead(button1Pin) == 0x1)
+        else if(digitalRead(button1Pin) == 0x0 && digitalRead(button2Pin) == 0x1 && digitalRead(button3Pin) == 0x1)
         {
             Serial.print("1,0,0\n");
         }
-        else if(digitalRead(button1Pin) == 0x1 && digitalRead(button1Pin) == 0x0 && digitalRead(button1Pin) == 0x1)
+        else if(digitalRead(button1Pin) == 0x1 && digitalRead(button2Pin) == 0x0 && digitalRead(button3Pin) == 0x1)
         {
             Serial.print("0,1,0\n");
         }
-        else if(digitalRead(button1Pin) == 0x1 && digitalRead(button1Pin) == 0x1 && digitalRead(button1Pin) == 0x0)
+        else if(digitalRead(button1Pin) == 0x1 && digitalRead(button2Pin) == 0x1 && digitalRead(button3Pin) == 0x0)
         {
             Serial.print("0,0,1\n");
         }
-        else if(digitalRead(button1Pin) == 0x1 && digitalRead(button1Pin) == 0x0 && digitalRead(button1Pin) == 0x0)
+        else if(digitalRead(button1Pin) == 0x1 && digitalRead(button2Pin) == 0x0 && digitalRead(button3Pin) == 0x0)
         {
             Serial.print("0,1,1\n");
         }
-        else if(digitalRead(button1Pin) == 0x0 && digitalRead(button1Pin) == 0x1 && digitalRead(button1Pin) == 0x0)
+        else if(digitalRead(button1Pin) == 0x0 && digitalRead(button2Pin) == 0x1 && digitalRead(button3Pin) == 0x0)
         {
             Serial.print("1,0,1\n");
         }
-        else if(digitalRead(button1Pin) == 0x0 && digitalRead(button1Pin) == 0x0 && digitalRead(button1Pin) == 0x1)
+        else if(digitalRead(button1Pin) == 0x0 && digitalRead(button2Pin) == 0x0 && digitalRead(button3Pin) == 0x1)
         {
             Serial.print("1,1,0\n");
         }
-        else if(digitalRead(button1Pin) == 0x0 && digitalRead(button1Pin) == 0x0 && digitalRead(button1Pin) == 0x0)
+        else if(digitalRead(button1Pin) == 0x0 && digitalRead(button2Pin) == 0x0 && digitalRead(button3Pin) == 0x0)
         {
             Serial.print("1,1,1\n");
         }
