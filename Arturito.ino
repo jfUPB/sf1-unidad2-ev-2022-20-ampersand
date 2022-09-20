@@ -69,6 +69,14 @@ void task()
       {
         digitalWrite(led3, LOW);
       }
+      else if (command == "led4ON")
+      {
+        digitalWrite(led3, HIGH);
+      }
+      else if (command == "led4OFF")
+      {
+        digitalWrite(led3, LOW);
+      }
       else if (command == "readBUTTONS")
       {
         if(digitalRead(button1Pin) == HIGH && digitalRead(button1Pin) == HIGH && digitalRead(button1Pin) == HIGH)
