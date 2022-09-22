@@ -1,0 +1,14 @@
+#line 1 "/home/pop-os/sf1-unidad2-ev-2022-20-ampersand/Evaluacion_Unidad2/Library/PackageCache/com.unity.modules.uielements@1.0.0/package.json"
+{
+    "name": "com.unity.modules.uielements",
+    "version": "1.0.0",
+    "type": "module",
+    "displayName": "UIElements",
+    "description": "The UIElements module implements the UIElements retained mode UI framework. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIElementsModule.html",
+    "dependencies": {
+        "com.unity.modules.ui": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.uielementsnative": "1.0.0"
+    }
+}

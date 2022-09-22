@@ -1,0 +1,12 @@
+#line 1 "/home/pop-os/sf1-unidad2-ev-2022-20-ampersand/Evaluacion_Unidad2/Library/PackageCache/com.unity.modules.animation@1.0.0/package.json"
+{
+    "name": "com.unity.modules.animation",
+    "version": "1.0.0",
+    "type": "module",
+    "displayName": "Animation",
+    "description": "The Animation module implements Unity's animation system. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AnimationModule.html",
+    "icon": ".icon.png",
+    "dependencies": {
+
+    }
+}

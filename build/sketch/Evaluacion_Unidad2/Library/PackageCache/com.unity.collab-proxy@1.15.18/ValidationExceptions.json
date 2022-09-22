@@ -1,0 +1,16 @@
+#line 1 "/home/pop-os/sf1-unidad2-ev-2022-20-ampersand/Evaluacion_Unidad2/Library/PackageCache/com.unity.collab-proxy@1.15.18/ValidationExceptions.json"
+{
+    "ErrorExceptions": [
+        {
+            "ValidationTest": "API Validation",
+            "ExceptionMessage": "New assembly \"Unity.PlasticSCM.EditorTests\" may only be added in a new minor or major version.",
+            "PackageVersion": "1.15.18"
+        },
+        {
+            "ValidationTest": "API Validation",
+            "ExceptionMessage": "Additions require a new minor or major version.",
+            "PackageVersion": "1.15.18"
+        }
+    ],
+    "WarningExceptions": []
+}

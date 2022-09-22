@@ -1,0 +1,25 @@
+#line 1 "/home/pop-os/sf1-unidad2-ev-2022-20-ampersand/Evaluacion_Unidad2/Library/PackageCache/com.unity.visualscripting@1.7.8/ValidationConfig.json"
+{
+    "FilenameValidation":
+    {
+        "Filenames":
+        [
+            {
+                "Filename": "Editor/VisualScripting.Flow/Framework/Control/Switch*Descriptor.cs",
+                "Targets": "+Switch"
+            },
+            {
+                "Filename": "Editor/VisualScripting.Flow/Framework/Control/Switch*Descriptor.cs.meta",
+                "Targets": "+Switch"
+            },
+            {
+                "Filename": "Runtime/VisualScripting.Flow/Framework/Control/Switch*.cs",
+                "Targets": "+Switch"
+            },
+            {
+                "Filename": "Runtime/VisualScripting.Flow/Framework/Control/Switch*.cs.meta",
+                "Targets": "+Switch"
+            }
+        ]
+    }
+}

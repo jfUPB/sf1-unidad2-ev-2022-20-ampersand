@@ -1,0 +1,12 @@
+#line 1 "/home/pop-os/sf1-unidad2-ev-2022-20-ampersand/Evaluacion_Unidad2/Library/PackageCache/com.unity.modules.cloth@1.0.0/package.json"
+{
+    "name": "com.unity.modules.cloth",
+    "version": "1.0.0",
+    "type": "module",
+    "displayName": "Cloth",
+    "description": "The Cloth module implements cloth physics simulation through the Cloth component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ClothModule.html",
+    "icon": ".icon.png",
+    "dependencies": {
+        "com.unity.modules.physics": "1.0.0"
+    }
+}

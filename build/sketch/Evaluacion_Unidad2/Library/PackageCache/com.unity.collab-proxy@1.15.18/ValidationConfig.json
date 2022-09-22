@@ -1,0 +1,23 @@
+#line 1 "/home/pop-os/sf1-unidad2-ev-2022-20-ampersand/Evaluacion_Unidad2/Library/PackageCache/com.unity.collab-proxy@1.15.18/ValidationConfig.json"
+{
+  "FilenameValidation": {
+    "Filenames": [
+      {
+        "Filename": "*/SwitchCollabAndPlastic.md",
+        "Targets": "+Switch"
+      },
+      {
+        "Filename": "*/SwitchModeConfirmationDialog.cs",
+        "Targets": "+Switch"
+      },
+      {
+        "Filename": "*/SwitchModeConfirmationDialog.cs.meta",
+        "Targets": "+Switch"
+      },
+      {
+        "Filename": "*/SwitchCollab.png",
+        "Targets": "+Switch"
+      }
+    ]
+  }
+}
